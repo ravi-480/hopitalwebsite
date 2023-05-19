@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500;800&family=Montserrat:wght@300&family=Nunito:wght@200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Rubik:wght@400;500;600&family=Ubuntu:wght@300&display=swap');
+
+
+
+:root{
+    --blue:#0188DF;
+    --black:#354046;
+}
+*::selection{
+    background-color: #0188DF;
+    color: whitesmoke;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Nunito',sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.header{
+position: sticky;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+box-shadow: 1rem 0.2rem 2rem rgba(0, 0, 0, 0.7);
+border-radius: .3rem;
+
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.header .flex .logo span{
+    color: #0188DF;
+    font-weight: 570;
+}
+
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2.5rem;
+}
+.header .flex .navbar a{
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    color: #354046;
+}
+.header .flex .navbar a:hover{
+   
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: 550;
+    transition: .2s all linear;
+    text-shadow: .1rem .2rem .4rem rgba(0, 0, 0, 0.3);
+
+}
+#menue-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    color: black;
+}
+
+.home .content {
+    text-align: center;
+}
+
+.home .content h1{
+    font-size: 4.5rem;
+}
+.home .content h1 span{
+    color: #0188DF;
+}
+.home .content h3{
+    font-size: 3rem;
+}
+.button{
+    color: whitesmoke;
+    background-color: #0188DF;
+    font-size: 1.7rem;
+    padding: 1.4rem 2.8rem;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    z-index: 0;
+    overflow: hidden;
+   
+}
+.button::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color:#15384f;
+    transition: .2s linear;
+   
+}
+.button:hover:before{
+   top: 0%;
+}
+.button:hover{
+    box-shadow: .2rem .4rem .7rem rgba(0, 0, 0, 0.5);
+}
+
+.about{
+    background-color: #eee;
+}
+
+.about .content .box{
+    margin: 3rem 0rem;
+    align-items: center;
+}
+.about .content .box h3{
+font-size: 2.5rem;
+color: #354046;
+}
+.about .content .box h3 i{
+    padding: 0rem 1.3rem;
+    color: #0188DF;
+}
+.about .content .box p{
+    font-size: 1.7rem;
+    color: var(--black);
+    padding-left: 6rem;
+}
+
+
+.header-active{
+    background-color: #fff;
+    box-shadow: 0rem 1.3rem 2.5rem rgba(0, 0, 0, 0.3);
+    transition: .2s linear;
+    padding: .2rem .3rem;
+}
+.facility{
+    min-height: 100vh;
+}
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    padding: 1rem;
+    padding-top: 8rem;
+}
+.heading span{
+    color: #0188DF;
+}
+
+.facility .box-container{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   padding-bottom: 3rem;
+}
+.facility .box-container .box {
+    width:30rem;
+    height: 20rem;
+    margin: .3rem;
+    overflow: hidden;
+}
+.facility .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.facility .box-container .box:hover img{
+    transform: scale(1.3);
+    transition: .2s linear;
+}
+
+.review{
+    background: url(pexels-nataliya-vaitkevich-5863398.jpg),linear-gradient(var(--black),var(--black)) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.review .heading {
+    color: whitesmoke;
+    font-size: 5rem;
+
+}
+.review .heading span{
+    color: #0188DF;
+}
+.review .box p{
+    font-size: 1.4rem;
+    color: var(--black);
+}
+.review .box h3{
+    color: var(--blue);
+    text-align: end;
+    font-size: 1.3rem;
+}
+.review .box::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: .7rem;
+    height: 2rem;
+    width: 2rem;
+    background: white;
+    transform: rotate(45deg);
+}
+
+
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.review .box-container .box img{
+    position: absolute;
+
+bottom: -7rem;
+left: -1rem;
+height: 5rem;
+width: 5rem;
+border-radius: 50%;
+object-fit: cover;
+
+}
+.review .box-container .box {
+    background-color: white;
+    width: 30rem;
+    margin: 5rem 1rem;
+    padding: 1.5rem;
+    border-radius: .4rem;
+    position: relative;
+}
+
+.counter .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0rem;
+}
+.counter .box-container .box{
+    text-align: center;
+    margin: 2rem 5rem;
+}
+.counter .box-container .box i{
+    font-size: 2.5rem;
+    margin: 1rem 1rem;
+    color: #354046;
+}
+
+.counter .box-container .box span{
+    color: #0188DF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.counter .box-container .box h3{
+    margin: 1rem 0;
+    color: #354046;
+    font-size: 2.5rem;
+}
+.counter .box-container .box .fa-smile{
+    color: rgb(218, 218, 4);
+}
+
+
+.contact{
+    background-color: var(--black);
+}
+.contact .heading{
+    color: #fff;
+}
+.contact form{
+    text-align: center;
+}
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,select{
+    padding: 0rem 1rem;
+    height: 4rem;
+    width: 49%;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: .3rem;
+}
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+    font-size: 1.7rem;
+    border-radius: .4rem;
+    width: 100%;
+}
+
+.post .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post .box-container .box{
+    width: 30rem;
+    margin: 2rem 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0rem .3rem .5rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.post .box-container .box span{
+    text-align: end;
+    display: block;
+}
+
+.post .box-container .box .content{
+   padding: 0rem 1.5rem;
+    color: #0188DF;
+    font-size: 1.5rem;
+
+}
+.post .box-container .box .content:hover h3{
+    color: #0188DF;
+}
+.post .box .button{
+    margin-bottom: 1rem;
+}
+
+
+.post .box-container .box img{
+    width: 100%;
+    height: 20rem;
+
+}
+.post .box-container .box h3{
+    font-size: 2rem;
+    color: #354046;
+}
+.post .box-container .box p{
+    color: #444;
+    font-size: 1.5rem;
+
+}
+
+.footer{
+    background-color: var(--black);
+}
+.footer p{
+    color: #eee;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.footer .col-md-4:nth-child(1) a{
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+.footer a{
+    display: block;
+    color: aliceblue;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+.footer a:hover{
+    color: #0188DF;
+    font-size: 2rem;
+    transition: .2s linear;
+
+}
+.footer h3{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+.footer .logo span{
+    color: var(--blue);
+}
+.footer .credit{
+    color: aliceblue;
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 0;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    border-top: .1rem solid white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+
+    }
+    section{
+        max-width: 1100px;
+    }
+   
+}
+@media(max-width:768px){
+    #menue-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menue-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header .flex .navbar {
+        position: absolute;
+        top:  99%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        transition: .2s linear;
+    }
+    .header .flex .navbar.active{
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+
+    .header .flex .navbar{
+        background-color: rgba(155, 203, 234, 0.5);
+    }
+    .header .flex .navbar a{
+        display: block;
+        margin: 2rem;
+        color: black;
+        font-weight: 600;
+    }
+    .contact form .inputBox input,select{
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+   
+}
